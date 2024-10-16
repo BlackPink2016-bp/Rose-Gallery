@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .logo-img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f39c12;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e84118;
+}
+
+.about-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #e84118;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.fun-facts {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.fun-facts li {
+    padding: 10px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-row {
+        flex-direction: column;
+    }
+
+    .about-text, .about-image {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+}
